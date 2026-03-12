@@ -1,0 +1,14 @@
+VIIKKO 11
+
+Mitä opin:
+    -Opin jo jotain Reactin perusteista tekemällä Lemon  Clicker peliä.
+        -Läheskään kaikkea en viellä ymmärrä.
+    -Opin käyttämään Git version hallintaa ja jopa ymmärtämään mitä siinä tapahtuu.
+        -Jos kerkiän niin siirrän repot githubiin.
+    -Tein henkilökohtaisen tilin githubiin ja sain siellä testi kotisivut pyörimään.
+
+Ongelmat:
+    -En saanut versionhallintaa alkuun toimimaan tuli herja ->  git commit -m -> ettei m ollut arvoa.
+    Ratkaisu:
+        En ollut määritellyt arvoa  git commit -m "tänne"
+    
