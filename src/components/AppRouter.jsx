@@ -6,6 +6,7 @@ import ErrorPage from '../pages/ErrorPage'
 import Clicker from '../pages/Clicker'
 import Store from '../pages/Store'
 import Settings from '../pages/Settings'
+import Credits from '../pages/Credits'
 
 function AppRouter(props) {
 
@@ -18,6 +19,7 @@ function AppRouter(props) {
         { path: "", element: <Clicker stats={props.stats} handleClick={props.handleClick} /> },
         { path: "store", element: <Store stats={props.stats} />},
         { path: "settings", element: <Settings stats={props.stats} />}, 
+        { path: "credits", element: <Credits stats={props.stats} />}, 
       ]
     }
   ])
