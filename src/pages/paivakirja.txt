@@ -1,4 +1,9 @@
-VIIKKO 11
+VIIKKOPÄIVÄKIRJA
+
+
+VIIKKO 11/2026
+
+Projekti: Lemon Clicker
 
 Mitä opin:
     -Opin jo jotain Reactin perusteista tekemällä Lemon  Clicker peliä.
@@ -10,5 +15,10 @@ Mitä opin:
 Ongelmat:
     -En saanut versionhallintaa alkuun toimimaan tuli herja ->  git commit -m -> ettei m ollut arvoa.
     Ratkaisu:
-        En ollut määritellyt arvoa  git commit -m "tänne"
+        En ollut määritellyt m arvoa  git commit -m "tänne"
+
+VIIKKO 12
+
+Mitä opin:
+        -
     
