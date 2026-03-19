@@ -35,12 +35,7 @@ function App() {
                storeitems={storeitems} 
                handleClick={handleClick} />
   )
-
-
-
-
-
-
+  
 }
 
 export default App
