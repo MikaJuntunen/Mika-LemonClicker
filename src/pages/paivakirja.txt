@@ -98,4 +98,32 @@ You can also disable this overlay by setting server.hmr.overlay to false in vite
 
     Ratkaisu:
         -Hohoijaa. Olin nimennyt Stat.jsx väärin.
+
+    Ongelma 5: 
+        -Ei toimi taas mikään.
+        -Herja: Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+
+client:809 [vite] Failed to reload /src/pages/Settings.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+error	@	client:809
+    Ratkaisu:
+        -Olin luonut Reset.jsx tiedoston väärään kansioon...
+
+    Ongelma 6: ei toimi 
+        Herja:   return (
+              <AppRouter stats={stats}
+               storeitems={storeitems}
+               handleClick={handleClick}
+               handlePurchase={handlePurchase}
+               handleReset={handleReset} />
+
+               storeitems={storeitems} 
+               handleClick={handleClick} 
+               handlePurchase={handlePurchase} />
+
+  )
+
+}
+
+export default App
+    Ratkaisu osa oli kahteen kertaan, taas huolimatomuus..
     
