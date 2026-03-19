@@ -1,7 +1,7 @@
 VIIKKOPÄIVÄKIRJA
 
 
-VIIKKO 11/2026
+VIIKKO 11/2026 (9-15.3)
 
 Projekti: Lemon Clicker
 
@@ -17,30 +17,60 @@ Ongelmat:
     Ratkaisu:
         En ollut määritellyt m arvoa  git commit -m "tänne"
 
-VIIKKO 12
+VIIKKO 12/2026 (16-22.3)
 
 Mitä opin:
-        -
+        -Muistan nyt ulkoa esim. kehitysympäristön käynnistys ja versionhallinta komennot.
+        -Opin vsc: ssä olevan hienon hakutoiminnon mikä on vasemmassa reunassa.
+        -Löydän nyt selaimen consolen herjoista jo paremmin missä tiedostossa ja rivillä ongelmat ovat. 
 
 
 Ongelmat: 
-    -Already included file name 'c:/Users/viisk/Documents/projektit/lemon-clicker/src/components/Item.jsx' differs from file name 'c:/Users/viisk/Documents/projektit/lemon-clicker/src/components/item.jsx' only in casing.
-  The file is in the program because:
+
+    -Tulee tällainen herja:
+
+    Already included file name 'c:/Users/viisk/Documents/projektit/lemon-clicker/src/components/Item.jsx' differs from file name 'c:/Users/viisk/Documents/projektit/lemon-clicker/src/components/item.jsx' only in casing.
+    The file is in the program because:
     Imported via '../components/Item' from file 'c:/Users/viisk/Documents/projektit/lemon-clicker/src/pages/Store.jsx'
     Root file specified for compilationts(1261)
+
     -En saa toimimaan /src/components/Item.jsx
+
     -Jos uudelleen nimeän tiedoston ja  import Item from '../components/Item' ja tämän samalla nimellä, ei tule enää herjaa, mutta peli ei toimi oikein.
-    
+
 Ratkaisu:
 
     -Rupesi toimimaan itsestään, kun uudelleen nimesin tiedoston ja importin useita kertoja.  
 
-Ongelma2:
+Ongelma 2:
 
     -store sivu kertoo Hupsis eli reititys on kai väärin. Tule tällainen herja nettisivulta: AppRouter.jsx:20 TypeError: Cannot read properties of undefined (reading 'map')
     at Store (Store.jsx:9:34)    
     const items = props.storeitems.map(item => <Item key={item.id} item={item} />) Osoittaa tälle riville.
 
-Ratkaisu: Tyhmä virhe -> Oli yksi jsx tiedosto tallentamatta😅      
+Ratkaisu: Tyhmä virhe -> Oli yksi jsx tiedosto tallentamatta😅   
+
+Ongelma 3:
+    -Koitin lisätä ilman ohjeita:  Harjoitus
+Ennen kuin jatkat eteenpäin, niin käy lisäämässä luvun sievennys Balance-, Booster- ja Header-komponentteihin.
+Jokaiseen kolmeen komponenttiin tehtävät muutokset ovat periaatteeltaan samat kuin edellä Item-komponenttiin tekemämme muutokset (kohta 3).
+Kun olet tehnyt lisäyksesi, niin vertaa niitä alla olevaan vaiheisiin.
+
+    -Eikä toimi enää mikään.
+    Herja selaimesta: 
+﻿
+    items.js:1 
+    Failed to load resource: the server responded with a status of 404 (Not Found)
+
+    -Koitin tehdä saman asian ohjeen mukaan, eikä toimi vielläkään..
+
+    Herja Powershellissä:
+
+    -9.18.07 [vite] (client) Pre-transform error: Failed to load url /src/config/items.js (resolved id: C:/Users/viisk/Documents/projektit/lemon-clicker/src/config/items.js) in C:/Users/viisk/Documents/projektit/lemon-clicker/src/App.jsx. Does the file exist?
+
+    Ratkaisu:
+    
+    -Jaaha mikähän sen muutti jsx muotoon?
+    -Toinen virhe, että olin laittanut "const total = shortenNumber(props.total)" return lauseeseen, kun piti olla ennen sitä. 
 
     
