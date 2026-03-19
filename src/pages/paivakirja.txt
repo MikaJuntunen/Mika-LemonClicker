@@ -23,6 +23,7 @@ Mitä opin:
         -Muistan nyt ulkoa esim. kehitysympäristön käynnistys ja versionhallinta komennot.
         -Opin vsc: ssä olevan hienon hakutoiminnon mikä on vasemmassa reunassa.
         -Löydän nyt selaimen consolen herjoista jo paremmin missä tiedostossa ja rivillä ongelmat ovat. 
+        -Alan ymmärtää enmmän miten ratkaista ongelmia, käyttämällä hyödyksi selaimen kehittäjätyökalua.
 
 
 Ongelmat: 
@@ -73,4 +74,28 @@ Kun olet tehnyt lisäyksesi, niin vertaa niitä alla olevaan vaiheisiin.
     -Jaaha mikähän sen muutti jsx muotoon?
     -Toinen virhe, että olin laittanut "const total = shortenNumber(props.total)" return lauseeseen, kun piti olla ennen sitä. 
 
+Ongelma 4:
+    Herja: [plugin:vite:import-analysis] Failed to resolve import "../components/Stat" from "src/pages/Settings.jsx". Does the file exist?
+C:/Users/viisk/Documents/projektit/lemon-clicker/src/pages/Settings.jsx:2:17
+1  |  import { jsxDEV } from "react/jsx-dev-runtime";
+2  |  import Header from "../components/Header";
+3  |  import Stat from "../components/Stat";
+   |                    ^
+4  |  function Settings(props) {
+5  |    return /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    at TransformPluginContext._formatLog (file:///C:/Users/viisk/Documents/projektit/lemon-clicker/node_modules/vite/dist/node/chunks/config.js:28999:43)
+    at TransformPluginContext.error (file:///C:/Users/viisk/Documents/projektit/lemon-clicker/node_modules/vite/dist/node/chunks/config.js:28996:14)
+    at normalizeUrl (file:///C:/Users/viisk/Documents/projektit/lemon-clicker/node_modules/vite/dist/node/chunks/config.js:27119:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///C:/Users/viisk/Documents/projektit/lemon-clicker/node_modules/vite/dist/node/chunks/config.js:27177:32
+    at async Promise.all (index 2)
+    at async TransformPluginContext.transform (file:///C:/Users/viisk/Documents/projektit/lemon-clicker/node_modules/vite/dist/node/chunks/config.js:27145:4)
+    at async EnvironmentPluginContainer.transform (file:///C:/Users/viisk/Documents/projektit/lemon-clicker/node_modules/vite/dist/node/chunks/config.js:28797:14)
+    at async loadAndTransform (file:///C:/Users/viisk/Documents/projektit/lemon-clicker/node_modules/vite/dist/node/chunks/config.js:22670:26)
+    at async viteTransformMiddleware (file:///C:/Users/viisk/Documents/projektit/lemon-clicker/node_modules/vite/dist/node/chunks/config.js:24542:20)
+Click outside, press Esc key, or fix the code to dismiss.
+You can also disable this overlay by setting server.hmr.overlay to false in vite.config.js.
+
+    Ratkaisu:
+        -Hohoijaa. Olin nimennyt Stat.jsx väärin.
     

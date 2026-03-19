@@ -26,7 +26,19 @@ function App() {
 
     // Luodaan tilamuuttuja, jossa tallennetaan napautusten määrä.
     // Luodaan tilamuuttuja, johon tallennetaan pelin laskennalliset tiedot.
-    const [stats, setStats] = useState({clicks: 0, balance: 0, increase: 1, itemstobuy: 0})
+    // Esitellään pelin laskennalliset alkuarvot.
+  const initialstats = {
+    clicks: 0,
+    balance: 0,
+    increase: 1,
+    itemstobuy: 0,
+    upgrades: 0,
+    collected: 0
+  }
+
+  // Luodaan tilamuuttuja, johon tallennetaan pelin laskennalliset tiedot.
+      const [stats, setStats] = useState(initialstats)
+
 
       const handlePurchase = (id) => {
     // Etsitään tunnistetta vastaavan tuotteen indeksi taulukosta.
