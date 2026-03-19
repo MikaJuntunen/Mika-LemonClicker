@@ -21,4 +21,26 @@ VIIKKO 12
 
 Mitä opin:
         -
+
+
+Ongelmat: 
+    -Already included file name 'c:/Users/viisk/Documents/projektit/lemon-clicker/src/components/Item.jsx' differs from file name 'c:/Users/viisk/Documents/projektit/lemon-clicker/src/components/item.jsx' only in casing.
+  The file is in the program because:
+    Imported via '../components/Item' from file 'c:/Users/viisk/Documents/projektit/lemon-clicker/src/pages/Store.jsx'
+    Root file specified for compilationts(1261)
+    -En saa toimimaan /src/components/Item.jsx
+    -Jos uudelleen nimeän tiedoston ja  import Item from '../components/Item' ja tämän samalla nimellä, ei tule enää herjaa, mutta peli ei toimi oikein.
+    
+Ratkaisu:
+
+    -Rupesi toimimaan itsestään, kun uudelleen nimesin tiedoston ja importin useita kertoja.  
+
+Ongelma2:
+
+    -store sivu kertoo Hupsis eli reititys on kai väärin. Tule tällainen herja nettisivulta: AppRouter.jsx:20 TypeError: Cannot read properties of undefined (reading 'map')
+    at Store (Store.jsx:9:34)    
+    const items = props.storeitems.map(item => <Item key={item.id} item={item} />) Osoittaa tälle riville.
+
+Ratkaisu: Tyhmä virhe -> Oli yksi jsx tiedosto tallentamatta😅      
+
     
