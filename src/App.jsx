@@ -2,11 +2,9 @@ import round from './utils/round'
 import getPurchasableItems from './utils/getPurchasableItems'
 import items from './config/items.js'
 import AppRouter from './components/AppRouter'
-
-
+import useLocalStorage from './utils/useLocalStorage'
 
 import { useState } from 'react'
-
 import './App.css'
 
 function App() {
@@ -21,11 +19,11 @@ function App() {
   }
   
   
-  // Luodaan tilamuuttuja, johon tallennetaan tuotelista.
-    const [storeitems,setStoreitems] = useState(items)
+    // Luodaan taltio, johon tallennetaan tuotelista.
+    const [storeitems,setStoreitems, resetStoreitems] = useLocalStorage('lemon-items',items)
+
 
     // Luodaan tilamuuttuja, jossa tallennetaan napautusten määrä.
-    // Luodaan tilamuuttuja, johon tallennetaan pelin laskennalliset tiedot.
     // Esitellään pelin laskennalliset alkuarvot.
   const initialstats = {
     clicks: 0,
@@ -36,8 +34,9 @@ function App() {
     collected: 0
   }
 
-  // Luodaan tilamuuttuja, johon tallennetaan pelin laskennalliset tiedot.
-      const [stats, setStats] = useState(initialstats)
+      // Luodaan taltio, johon tallennetaan pelin laskennalliset tiedot.
+      const [stats, setStats, resetStats] = useLocalStorage('lemon-stats',initialstats)
+
 
 
       const handlePurchase = (id) => {
