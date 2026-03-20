@@ -95,10 +95,11 @@ function App() {
   }
 
   const handleReset = () => {
-    // Päivitetään tilamuuttujat alkuarvoihin.
-    setStats(initialstats)
-    setStoreitems(items)
+    // Palautetaan taltiot alkuarvoihin.
+    resetStats()
+    resetStoreitems()
   }
+
 
 
   return (
