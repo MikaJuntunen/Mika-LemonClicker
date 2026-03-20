@@ -19,7 +19,7 @@ function Settings(props) {
           </div>
         </div>
             <Reset resetvalue={props.stats.clicks}
-             handleReset={props.handleReset} />
+            handleReset={props.handleReset} /> 
 
 
 

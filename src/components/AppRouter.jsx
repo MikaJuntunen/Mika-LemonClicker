@@ -20,7 +20,8 @@ function AppRouter(props) {
         { path: "store", element: <Store stats={props.stats}
         storeitems={props.storeitems}
         handlePurchase={props.handlePurchase} />},
-                { path: "settings", element: <Settings stats={props.stats}
+        
+        { path: "settings", element: <Settings stats={props.stats}
                                                handleReset={props.handleReset} />},
 
         { path: "credits", element: <Credits stats={props.stats} />}, 

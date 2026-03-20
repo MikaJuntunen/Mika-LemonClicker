@@ -24,6 +24,7 @@ Mitä opin:
         -Opin vsc: ssä olevan hienon hakutoiminnon mikä on vasemmassa reunassa.
         -Löydän nyt selaimen consolen herjoista jo paremmin missä tiedostossa ja rivillä ongelmat ovat. 
         -Alan ymmärtää enmmän miten ratkaista ongelmia, käyttämällä hyödyksi selaimen kehittäjätyökalua.
+        -Sain minulle tärkeät undo/redo napit asentamalla vsc lisäosan.
 
 
 Ongelmat: 
@@ -125,5 +126,23 @@ error	@	client:809
 }
 
 export default App
-    Ratkaisu osa oli kahteen kertaan, taas huolimatomuus..
+
+    Ratkaisu: Osa oli kahteen kertaan, taas huolimatomuus..
+
+    Ongelma 7: En saa poistettua suoritustietoja, koska en voi kirjoittaa tekstiä kenttään.
+
+        Herja: react-dom_client.js?v=119ba0ca:1394 You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
+
+        Vaikuttaisi oleva read-only field?
+
+    Ratkaisu: En ollut tehnyt tätä: Eli virkeät aivot toimivat paremmin😂
+
+                 <div>
+          <input type="text"
+                 value={value}
+                 onChange={(e) => {setValue(e.target.value)}} />
+        </div>
+
+
+
     
