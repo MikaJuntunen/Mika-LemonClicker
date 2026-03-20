@@ -1,0 +1,10 @@
+{
+  "name": "Lemon Clicker",
+  "short_name": "Lemonade",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#EBEBEB",
+  "background_color": "#EBEBEB"
+}
