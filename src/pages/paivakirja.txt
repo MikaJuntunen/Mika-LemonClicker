@@ -149,4 +149,11 @@ export default App
         -Huomasin vahingossa, voi aiheuttaa ongelmia. Peli kuitenkin toimii toivotusti.
             App.jsx:7 tämä herja.
 
+VIIKKO 13 (23.3 - 29.3)
+
+    Mitä opin:
+        -Tein tilin Azureen ja sain 100$ "rahaa"
+        -Siirsin lemon clickerin githubiin, jossa minulla oli jo tili.
+        -Asensin vsc:n lisäosan Azure static web apps.
+
     

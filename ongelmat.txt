@@ -1,0 +1,68 @@
+PS C:\Users\viisk\Documents\projektit\lemon-clicker> npx pwa-asset-generator ./src/assets/lemon-big.svg ./public/icons -f -b "#EBEBEB" -m ./manifest.json -i
+Need to install the following packages:
+pwa-asset-generator@8.1.4
+Ok to proceed? (y) y
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+9.43.17 getSplashScreenMetaData Initialising puppeteer to load latest splash screen metadata 🤖
+9.43.17 getAppleSplashScreenData Navigating to Apple Human Interface Guidelines website - https://developer.apple.com/design/human-interface-guidelines/layout/
+9.43.20 getAppleSplashScreenData Waiting for the data table to be loaded
+9.43.20 getAppleSplashScreenData Retrieved splash screen data
+9.43.20 getSplashScreenMetaData Loaded metadata for iOS platform 🙌
+9.43.20 generateImages Looks like folder ./public/icons doesn't exist. Created one for you 🤔
+9.43.20 saveImages Initialising puppeteer to take screenshots 🤖
+9.43.20 getShellHtml Generating shell html with provided image source
+9.43.20 getShellHtml Providing shell html as page content
+9.43.20 saveImages Saved image apple-splash-2048-2732 🙌
+9.43.20 saveImages Saved image apple-splash-1668-2388 🙌
+9.43.20 saveImages Saved image apple-splash-2732-2048 🙌
+9.43.20 saveImages Saved image apple-splash-2388-1668 🙌
+9.43.20 saveImages Saved image apple-splash-1536-2048 🙌
+9.43.21 saveImages Saved image apple-splash-2048-1536 🙌
+9.43.21 saveImages Saved image apple-splash-1640-2360 🙌
+9.43.21 saveImages Saved image apple-splash-2360-1640 🙌
+9.43.21 saveImages Saved image apple-splash-1668-2224 🙌
+9.43.21 saveImages Saved image apple-splash-2224-1668 🙌
+9.43.21 saveImages Saved image apple-splash-1620-2160 🙌
+9.43.21 saveImages Saved image apple-splash-2160-1620 🙌
+9.43.21 saveImages Saved image apple-splash-1488-2266 🙌
+9.43.21 saveImages Saved image apple-splash-2266-1488 🙌
+9.43.21 saveImages Saved image apple-splash-1320-2868 🙌
+9.43.21 saveImages Saved image apple-splash-2868-1320 🙌
+9.43.22 saveImages Saved image apple-splash-1206-2622 🙌
+9.43.22 saveImages Saved image apple-splash-2622-1206 🙌
+9.43.22 saveImages Saved image apple-splash-1260-2736 🙌
+9.43.22 saveImages Saved image apple-splash-2736-1260 🙌
+9.43.22 saveImages Saved image apple-splash-1290-2796 🙌
+9.43.22 saveImages Saved image apple-splash-2796-1290 🙌
+9.43.22 saveImages Saved image apple-splash-1179-2556 🙌
+9.43.22 saveImages Saved image apple-splash-2556-1179 🙌
+9.43.22 saveImages Saved image apple-splash-1170-2532 🙌
+9.43.22 saveImages Saved image apple-splash-2532-1170 🙌
+9.43.22 saveImages Saved image apple-splash-1284-2778 🙌
+9.43.22 saveImages Saved image apple-splash-2778-1284 🙌
+9.43.22 saveImages Saved image apple-splash-1125-2436 🙌
+9.43.22 saveImages Saved image apple-splash-2436-1125 🙌
+9.43.22 saveImages Saved image apple-splash-1242-2688 🙌
+9.43.22 saveImages Saved image apple-splash-2688-1242 🙌
+9.43.22 saveImages Saved image apple-splash-828-1792 🙌
+9.43.22 saveImages Saved image apple-splash-1792-828 🙌
+9.43.23 saveImages Saved image apple-splash-1242-2208 🙌
+9.43.23 saveImages Saved image apple-splash-2208-1242 🙌
+9.43.23 saveImages Saved image apple-splash-750-1334 🙌
+9.43.23 saveImages Saved image apple-splash-1334-750 🙌
+9.43.23 saveImages Saved image apple-splash-640-1136 🙌
+9.43.23 saveImages Saved image apple-splash-1136-640 🙌
+9.43.23 saveImages Saved image apple-icon-180 🙌
+9.43.23 saveImages Saved image manifest-icon-192 🙌
+9.43.23 saveImages Saved image manifest-icon-512 🙌
+9.43.23 saveImages Saved image favicon-196 🙌
+9.43.23 cli SyntaxError: Unexpected end of JSON input 😭
+<anonymous_script>:1
+
+
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at Object.addIconsToManifest (file:///C:/Users/viisk/AppData/Local/npm-cache/_npx/640c09cf1b001fe9/node_modules/pwa-asset-generator/dist/helpers/meta.js:90:31)
+    at async generateImages (file:///C:/Users/viisk/AppData/Local/npm-cache/_npx/640c09cf1b001fe9/node_modules/pwa-asset-generator/dist/main.js:59:13)
+    at async file:///C:/Users/viisk/AppData/Local/npm-cache/_npx/640c09cf1b001fe9/node_modules/pwa-asset-generator/dist/cli.js:80:9
