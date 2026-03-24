@@ -163,7 +163,7 @@ VIIKKO 13 (23.3 - 29.3)
 git branch -M main
 git push -u origin main
 
-    Ongelma 2:
+    Ongelma 2: Ei onnistu pelin julkaisu, pitää odottaa opettajien ohjeita.
 
     
 
