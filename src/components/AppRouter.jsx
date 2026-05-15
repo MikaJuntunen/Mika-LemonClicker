@@ -1,5 +1,5 @@
-import { createBrowserRouter } from "react-router"
-import { RouterProvider } from "react-router/dom"
+import { createHashRouter } from "react-router-dom"
+import { RouterProvider } from "react-router-dom"
 
 import Root from "../components/Root"
 import ErrorPage from '../pages/ErrorPage'
@@ -10,7 +10,7 @@ import Credits from '../pages/Credits'
 
 function AppRouter(props) {
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Root items={props.stats.itemstobuy} />,
