@@ -6,6 +6,7 @@ import manifest from './manifest.json';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Mika-LemonClicker/',
   plugins: [react(),
             VitePWA({ manifest: manifest })],
 })
